@@ -1,0 +1,1637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Wireshark">
+      <UniqueIdentifier>{e964f749-ad57-406e-9fc1-8534fda4beae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\EPAN">
+      <UniqueIdentifier>{54f5a484-6428-43cf-b080-9e0affcf8cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\EPAN\dissectors">
+      <UniqueIdentifier>{5ecf0776-ab55-4be9-b9ea-8f5f06c4a841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\EPAN\crypt">
+      <UniqueIdentifier>{57924433-29e4-49b7-af4f-b582886414af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\WSUTIL">
+      <UniqueIdentifier>{56a43eef-cc72-4ea8-8698-a09d5c0a2915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\GLIB">
+      <UniqueIdentifier>{f75417f9-ed49-4b8e-b3cc-81c9effafb8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\WIRETAP">
+      <UniqueIdentifier>{da3afe9a-5b8a-4c7d-a903-a52e45c94540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\EPAN\ftypes">
+      <UniqueIdentifier>{f0978a73-b37f-443f-8b3b-5e1cb529ece8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\EPAN\wmem">
+      <UniqueIdentifier>{e88cb59a-fcf1-40de-904e-0d82b0b29adb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\EPAN\dfilter">
+      <UniqueIdentifier>{36bc3371-f8bb-41e3-a772-eb999cb50f5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\GLIB\libcharset">
+      <UniqueIdentifier>{c33bc35a-8503-4458-ab16-63ee769fb6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wireshark\PCAP">
+      <UniqueIdentifier>{f9fb5001-5899-421e-8865-8c3f529cf577}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\ws_symbol_export.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wireshark.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-e212.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-gre.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee80211.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee80211-radiotap.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee80211-radiotap-defs.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee80211-radiotap-iter.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ipx.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-llc.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-sflow.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-wps.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\config.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_interop.h">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_system.h">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_user.h">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_ws.h">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\crypt\wep-wpadefs.h">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\addr_resolv.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\address_types.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\conversation_table.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\crc32-tvb.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\eapol_keydes_types.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\etypes.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\exceptions.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\expert.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\oui.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\packet.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\prefs.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\reassemble.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\strutil.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\uat.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\pint.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\glib.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wiretap\wtap.h">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-fc.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ip.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-juniper.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-netbios.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-sll.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-vines.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-wccp.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\aftypes.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\arcnet_pids.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\bridged_pids.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\conversation.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\frequency-utils.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\in_cksum.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\ipproto.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\llcsaps.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\ppptypes.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\sminmpec.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\tap.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\to_str.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\value_string.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\xdlc.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wiretap\erf.h">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-eth.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-fcbls.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-fclctl.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ppp.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\arptypes.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\ax25_pids.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\color_dissector_filters.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\decode_as.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\ip_opts.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\nlpid.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-chdlc.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee8023.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-isl.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\crc16-tvb.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\chdlctypes.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-tr.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\show_exception.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\proto.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\ftypes\ftypes.h">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\address.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\ipv6-utils.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\tvbuff.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_allocator.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_allocator_block.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_allocator_block_fast.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_allocator_simple.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_allocator_strict.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_array.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_core.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_list.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_map.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_map_int.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_miscutl.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_queue.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_scopes.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_stack.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_strbuf.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_strutl.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_tree.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_user_cb.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_user_cb_int.h">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\ftypes\ftypes-int.h">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\nstime.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\drange.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\inet_aton.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\crc16.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\crc16-plain.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\crc32.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\guid-utils.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\ipv4.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\packet_info.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\to_str-int.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\inet_v6defs.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\str_util.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\conversation_debug.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\stat_tap_ui.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\stat_groups.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\conv_id.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\except.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\epan.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\register.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\frame_data.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\epan_dissect.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\circuit.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\column-utils.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\epan-int.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\oids.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\dfilter.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\ws_diag_control.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\timestamp.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\color.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\addr_and_mask.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\charsets.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\column.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\eap.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\filter_expressions.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\osi-utils.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\params.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\prefs-int.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\print.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\range.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\stats_tree.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\stream.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\tfs.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\time_fmt.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\tvbuff-int.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\uat-int.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ber.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-mtp3.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\file_util.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\filesystem.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\report_err.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\sign_ext.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\time_util.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\unicode-utils.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\ws_mempbrk.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\ws_mempbrk_int.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\column-info.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\ws_version_info.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-data.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-frame.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\packet-range.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\print_stream.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\glibconfig.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gmacros.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\strptime.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gtypes.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gversionmacros.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gmodule.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\privileges.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\version.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\copyright_info.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\os_version_info.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\ws_cpuid.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\buffer.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wiretap\file_wrappers.h">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wiretap\wtap-int.h">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wiretap\pcap-encap.h">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\cfile.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\ps.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\stats_tree_priv.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\asm_utils.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\ptvcursor.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\bits_count_ones.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\bits_ctz.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\plugins.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\dfilter-int.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\dfilter-macro.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\dfvm.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\gencode.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\semcheck.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\syntax-tree.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\dfunctions.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\cppmagic.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\sttype-function.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\sttype-range.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dfilter\sttype-test.h">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\asn1.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\md5.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\color_filters.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\log.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-q708.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-sccp.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-e164.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-tcap.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\file.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\tempfile.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wiretap\merge.h">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\fileset.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\globals.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\frame_tvbuff.h">
+      <Filter>Wireshark</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\frame_data_sequence.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\garray.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\glist.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gnode.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gslice.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gslist.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gtree.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\ghash.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gstring.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gbytes.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gmem.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gmessages.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gqsort.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gtestutils.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gthread.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gatomic.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gstrfuncs.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gunicode.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gerror.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gquark.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gthreadprivate.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gfileutils.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gprintf.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gprintfint.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\glibintl.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gconvert.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gcharset.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gcharsetprivate.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gutils.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\glib_trace.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gtrashstack.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\valgrind.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gmain.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gmain-internal.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\galloca.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gbacktrace.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\genviron.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\glib-init.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gpattern.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gpoll.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\giochannel.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\ghook.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\glib-private.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gqueue.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gtimer.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gwakeup.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gwin32.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\grand.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gconstructor.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\libcharset\libcharset.h">
+      <Filter>Wireshark\GLIB\libcharset</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\libcharset\localcharset.h">
+      <Filter>Wireshark\GLIB\libcharset</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\ggettext.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gstdio.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_debug.h">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_int.h">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_rijndael.h">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\rc4.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\sha1.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wsutil\aes.h">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-bpq.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ipv6.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee8021ah.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-vlan.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gmirroringtable.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gscripttable.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gunichartables.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gunicodeprivate.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gunicomp.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gunidecomp.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ax25.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-netrom.h">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\glib\gtranslit-data.h">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wiretap\pcap-common.h">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\wiretap\atm.h">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\epan\uat_load_lex.h">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClInclude>
+    <ClInclude Include="WIRESHARK\PCAP\pcapio.h">
+      <Filter>Wireshark\PCAP</Filter>
+    </ClInclude>
+    <ClInclude Include="WSEpan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-e212.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-gre.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-airopeek.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-netmon.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-prism.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-radio.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-radiotap.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-radiotap-iter.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-wlancap.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ipx.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-llc.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-sflow.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-wps.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\addr_resolv.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\address_types.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\conversation_table.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\crc32-tvb.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\expert.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\oui.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\packet.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\prefs.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\reassemble.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\strutil.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\uat.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wiretap\wtap.c">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-fc.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ip.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-juniper.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-netbios.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-sll.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-vines.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-wccp.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\aftypes.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\conversation.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\frequency-utils.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\in_cksum.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ipproto.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\sminmpec.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\tap.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\to_str.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\value_string.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\xdlc.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wiretap\erf.c">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-eth.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-fclctl.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ppp.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\color_dissector_filters.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\decode_as.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-chdlc.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee8023.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-isl.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\crc16-tvb.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-tr.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\show_exception.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\proto.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftypes.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\tvbuff.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_allocator_block.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_allocator_block_fast.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_allocator_simple.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_allocator_strict.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_array.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_core.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_list.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_map.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_miscutl.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_scopes.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_stack.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_strbuf.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_strutl.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_tree.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_user_cb.c">
+      <Filter>Wireshark\EPAN\wmem</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\nstime.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\drange.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\inet_aton.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\crc16.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\crc16-plain.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\crc32.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\guid-utils.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ipv4.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\str_util.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\stat_tap_ui.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\except.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\epan.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\register.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\frame_data.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\circuit.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\column-utils.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\oids.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\dfilter.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\timestamp.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\addr_and_mask.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\charsets.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\column.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\filter_expressions.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\osi-utils.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\print.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\range.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\stats_tree.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\stream.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\tfs.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ber.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-mtp3.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\file_util.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\filesystem.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\report_err.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\time_util.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\unicode-utils.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\ws_mempbrk.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\ws_mempbrk_sse42.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\ws_version_info.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-data.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-frame.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\packet-range.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\print_stream.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\strptime.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\privileges.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\copyright_info.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\os_version_info.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\buffer.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wiretap\file_wrappers.c">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\cfile.c">
+      <Filter>Wireshark</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\asm_utils.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\plugins.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\dfilter-macro.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\dfvm.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\gencode.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\semcheck.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\syntax-tree.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\dfunctions.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-function.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-range.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-test.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\asn1.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\md5.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\color_filters.c">
+      <Filter>Wireshark</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-q708.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-sccp.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-e164.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-tcap.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\file.c">
+      <Filter>Wireshark</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\tempfile.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wiretap\merge.c">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\fileset.c">
+      <Filter>Wireshark</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\frame_tvbuff.c">
+      <Filter>Wireshark</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\frame_data_sequence.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\garray.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\glist.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gnode.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gslice.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gslist.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gtree.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\ghash.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gstring.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gbytes.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gmem.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gmessages.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gqsort.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gtestutils.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gthread.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gatomic.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gstrfuncs.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gerror.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gquark.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gfileutils.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gprintf.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gconvert.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gcharset.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gutils.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gtrashstack.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gmain.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gbacktrace.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\genviron.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\glib-init.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gpattern.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gpoll.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\giochannel.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\ghook.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\glib-private.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gqueue.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gtimer.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gwakeup.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gwin32.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\grand.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\libcharset\localcharset.c">
+      <Filter>Wireshark\GLIB\libcharset</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\ggettext.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gstdio.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap.c">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap_debug.c">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap_rijndael.c">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\rc4.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\sha1.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\aes.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\glib.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-pointer.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\tvbuff_subset.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ethertype.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-bytes.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-double.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-guid.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-integer.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-ipv4.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-ipv6.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-none.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-pcre.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-string.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-time.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-tvbuff.c">
+      <Filter>Wireshark\EPAN\ftypes</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gthread-win32.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\tvbuff_real.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-eap.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\guniprop.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gutf8.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gunidecomp.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-bpq.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee8021ah.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-vlan.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ax25.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-netrom.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ipv6.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-wifi-display.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-wifi-p2p.c">
+      <Filter>Wireshark\EPAN\dissectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\glib\gtranslit.c">
+      <Filter>Wireshark\GLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wiretap\pcap-common.c">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wiretap\atm.c">
+      <Filter>Wireshark\WIRETAP</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\uat_load.c">
+      <Filter>Wireshark\EPAN</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-integer.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-string.c">
+      <Filter>Wireshark\EPAN\dfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap_ccmp.c">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap_tkip.c">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap_wep.c">
+      <Filter>Wireshark\EPAN\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\inet_ntop.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\wsutil\inet_pton.c">
+      <Filter>Wireshark\WSUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="WIRESHARK\PCAP\pcapio.cpp">
+      <Filter>Wireshark\PCAP</Filter>
+    </ClCompile>
+    <ClCompile Include="WSEpanMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exports.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+LIBRARY	WSEpanLib
+
+EXPORTS 		
+   wseFinalize			@1
+   wseInitialize		@2
+   wseParentNode		@3
+   wseChildNode			@4
+   wseNextNode			@5
+   wseGetNodeInfo		@6
+   wseDissectPacket		@7
+   wseCreateDissector	@8
+   wseDeleteDissector	@9
+   wseResolveNetAddr	@10

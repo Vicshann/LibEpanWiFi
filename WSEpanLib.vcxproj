@@ -1,0 +1,902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{121A204B-601E-402B-83AA-52FB8E0B9633}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WSEpan</RootNamespace>
+    <ProjectName>WSEpanLib</ProjectName>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+    <OutDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+    <OutDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(ProjectName)\$(Configuration)$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;TESTAPP;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\WIRESHARK;.\WIRESHARK\GLIB\;.\WIRESHARK\EPAN\;.\WIRESHARK\PCAP\;.\WIRESHARK\epan\ftypes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;TESTAPP;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\WIRESHARK;.\WIRESHARK\GLIB\;.\WIRESHARK\EPAN\;.\WIRESHARK\PCAP\;.\WIRESHARK\epan\ftypes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\WIRESHARK;.\WIRESHARK\GLIB\;.\WIRESHARK\EPAN\;.\WIRESHARK\PCAP\;.\WIRESHARK\epan\ftypes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+      <OutputFile>$(TargetDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\WIRESHARK;.\WIRESHARK\GLIB\;.\WIRESHARK\EPAN\;.\WIRESHARK\PCAP\;.\WIRESHARK\epan\ftypes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+      <OutputFile>$(TargetDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;TESTAPP;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\WIRESHARK;.\WIRESHARK\GLIB\;.\WIRESHARK\EPAN\;.\WIRESHARK\PCAP\;.\WIRESHARK\epan\ftypes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;TESTAPP;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\WIRESHARK;.\WIRESHARK\GLIB\;.\WIRESHARK\EPAN\;.\WIRESHARK\PCAP\;.\WIRESHARK\epan\ftypes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\WIRESHARK;.\WIRESHARK\GLIB\;.\WIRESHARK\EPAN\;.\WIRESHARK\PCAP\;.\WIRESHARK\epan\ftypes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+      <OutputFile>$(TargetDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\WIRESHARK;.\WIRESHARK\GLIB\;.\WIRESHARK\EPAN\;.\WIRESHARK\PCAP\;.\WIRESHARK\epan\ftypes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+      <OutputFile>$(TargetDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="WIRESHARK\cfile.h" />
+    <ClInclude Include="WIRESHARK\color.h" />
+    <ClInclude Include="WIRESHARK\color_filters.h" />
+    <ClInclude Include="WIRESHARK\config.h" />
+    <ClInclude Include="WIRESHARK\epan\address.h" />
+    <ClInclude Include="WIRESHARK\epan\address_types.h" />
+    <ClInclude Include="WIRESHARK\epan\addr_and_mask.h" />
+    <ClInclude Include="WIRESHARK\epan\addr_resolv.h" />
+    <ClInclude Include="WIRESHARK\epan\aftypes.h" />
+    <ClInclude Include="WIRESHARK\epan\arcnet_pids.h" />
+    <ClInclude Include="WIRESHARK\epan\arptypes.h" />
+    <ClInclude Include="WIRESHARK\epan\asm_utils.h" />
+    <ClInclude Include="WIRESHARK\epan\asn1.h" />
+    <ClInclude Include="WIRESHARK\epan\ax25_pids.h" />
+    <ClInclude Include="WIRESHARK\epan\bridged_pids.h" />
+    <ClInclude Include="WIRESHARK\epan\charsets.h" />
+    <ClInclude Include="WIRESHARK\epan\chdlctypes.h" />
+    <ClInclude Include="WIRESHARK\epan\circuit.h" />
+    <ClInclude Include="WIRESHARK\epan\color_dissector_filters.h" />
+    <ClInclude Include="WIRESHARK\epan\column-info.h" />
+    <ClInclude Include="WIRESHARK\epan\column-utils.h" />
+    <ClInclude Include="WIRESHARK\epan\column.h" />
+    <ClInclude Include="WIRESHARK\epan\conversation.h" />
+    <ClInclude Include="WIRESHARK\epan\conversation_debug.h" />
+    <ClInclude Include="WIRESHARK\epan\conversation_table.h" />
+    <ClInclude Include="WIRESHARK\epan\conv_id.h" />
+    <ClInclude Include="WIRESHARK\epan\crc16-tvb.h" />
+    <ClInclude Include="WIRESHARK\epan\crc32-tvb.h" />
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_debug.h" />
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_int.h" />
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_interop.h" />
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_rijndael.h" />
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_system.h" />
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_user.h" />
+    <ClInclude Include="WIRESHARK\epan\crypt\airpdcap_ws.h" />
+    <ClInclude Include="WIRESHARK\epan\crypt\wep-wpadefs.h" />
+    <ClInclude Include="WIRESHARK\epan\decode_as.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\cppmagic.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\dfilter-int.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\dfilter-macro.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\dfilter.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\dfunctions.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\dfvm.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\drange.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\gencode.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\semcheck.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\sttype-function.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\sttype-range.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\sttype-test.h" />
+    <ClInclude Include="WIRESHARK\epan\dfilter\syntax-tree.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ax25.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ber.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-bpq.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-chdlc.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-data.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-e164.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-e212.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-eth.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-fc.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-fcbls.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-fclctl.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-frame.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-gre.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee80211-radiotap-defs.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee80211-radiotap-iter.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee80211-radiotap.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee80211.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee8021ah.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ieee8023.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ip.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ipv6.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ipx.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-isl.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-juniper.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-llc.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-mtp3.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-netbios.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-netrom.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-ppp.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-q708.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-sccp.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-sflow.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-sll.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-tcap.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-tr.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-vines.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-vlan.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-wccp.h" />
+    <ClInclude Include="WIRESHARK\epan\dissectors\packet-wps.h" />
+    <ClInclude Include="WIRESHARK\epan\eap.h" />
+    <ClInclude Include="WIRESHARK\epan\eapol_keydes_types.h" />
+    <ClInclude Include="WIRESHARK\epan\epan-int.h" />
+    <ClInclude Include="WIRESHARK\epan\epan.h" />
+    <ClInclude Include="WIRESHARK\epan\epan_dissect.h" />
+    <ClInclude Include="WIRESHARK\epan\etypes.h" />
+    <ClInclude Include="WIRESHARK\epan\except.h" />
+    <ClInclude Include="WIRESHARK\epan\exceptions.h" />
+    <ClInclude Include="WIRESHARK\epan\expert.h" />
+    <ClInclude Include="WIRESHARK\epan\filter_expressions.h" />
+    <ClInclude Include="WIRESHARK\epan\frame_data.h" />
+    <ClInclude Include="WIRESHARK\epan\frame_data_sequence.h" />
+    <ClInclude Include="WIRESHARK\epan\frequency-utils.h" />
+    <ClInclude Include="WIRESHARK\epan\ftypes\ftypes-int.h" />
+    <ClInclude Include="WIRESHARK\epan\ftypes\ftypes.h" />
+    <ClInclude Include="WIRESHARK\epan\guid-utils.h" />
+    <ClInclude Include="WIRESHARK\epan\in_cksum.h" />
+    <ClInclude Include="WIRESHARK\epan\ipproto.h" />
+    <ClInclude Include="WIRESHARK\epan\ipv4.h" />
+    <ClInclude Include="WIRESHARK\epan\ipv6-utils.h" />
+    <ClInclude Include="WIRESHARK\epan\ip_opts.h" />
+    <ClInclude Include="WIRESHARK\epan\llcsaps.h" />
+    <ClInclude Include="WIRESHARK\epan\nlpid.h" />
+    <ClInclude Include="WIRESHARK\epan\oids.h" />
+    <ClInclude Include="WIRESHARK\epan\osi-utils.h" />
+    <ClInclude Include="WIRESHARK\epan\oui.h" />
+    <ClInclude Include="WIRESHARK\epan\packet-range.h" />
+    <ClInclude Include="WIRESHARK\epan\packet.h" />
+    <ClInclude Include="WIRESHARK\epan\packet_info.h" />
+    <ClInclude Include="WIRESHARK\epan\params.h" />
+    <ClInclude Include="WIRESHARK\epan\ppptypes.h" />
+    <ClInclude Include="WIRESHARK\epan\prefs-int.h" />
+    <ClInclude Include="WIRESHARK\epan\prefs.h" />
+    <ClInclude Include="WIRESHARK\epan\print.h" />
+    <ClInclude Include="WIRESHARK\epan\print_stream.h" />
+    <ClInclude Include="WIRESHARK\epan\proto.h" />
+    <ClInclude Include="WIRESHARK\epan\ps.h" />
+    <ClInclude Include="WIRESHARK\epan\ptvcursor.h" />
+    <ClInclude Include="WIRESHARK\epan\range.h" />
+    <ClInclude Include="WIRESHARK\epan\reassemble.h" />
+    <ClInclude Include="WIRESHARK\epan\show_exception.h" />
+    <ClInclude Include="WIRESHARK\epan\sminmpec.h" />
+    <ClInclude Include="WIRESHARK\epan\stats_tree.h" />
+    <ClInclude Include="WIRESHARK\epan\stats_tree_priv.h" />
+    <ClInclude Include="WIRESHARK\epan\stat_groups.h" />
+    <ClInclude Include="WIRESHARK\epan\stat_tap_ui.h" />
+    <ClInclude Include="WIRESHARK\epan\stream.h" />
+    <ClInclude Include="WIRESHARK\epan\strutil.h" />
+    <ClInclude Include="WIRESHARK\epan\tap.h" />
+    <ClInclude Include="WIRESHARK\epan\tfs.h" />
+    <ClInclude Include="WIRESHARK\epan\timestamp.h" />
+    <ClInclude Include="WIRESHARK\epan\time_fmt.h" />
+    <ClInclude Include="WIRESHARK\epan\to_str-int.h" />
+    <ClInclude Include="WIRESHARK\epan\to_str.h" />
+    <ClInclude Include="WIRESHARK\epan\tvbuff-int.h" />
+    <ClInclude Include="WIRESHARK\epan\tvbuff.h" />
+    <ClInclude Include="WIRESHARK\epan\uat-int.h" />
+    <ClInclude Include="WIRESHARK\epan\uat.h" />
+    <ClInclude Include="WIRESHARK\epan\uat_load_lex.h" />
+    <ClInclude Include="WIRESHARK\epan\value_string.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_allocator.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_allocator_block.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_allocator_block_fast.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_allocator_simple.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_allocator_strict.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_array.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_core.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_list.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_map.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_map_int.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_miscutl.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_queue.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_scopes.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_stack.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_strbuf.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_strutl.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_tree.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_user_cb.h" />
+    <ClInclude Include="WIRESHARK\epan\wmem\wmem_user_cb_int.h" />
+    <ClInclude Include="WIRESHARK\epan\xdlc.h" />
+    <ClInclude Include="WIRESHARK\file.h" />
+    <ClInclude Include="WIRESHARK\fileset.h" />
+    <ClInclude Include="WIRESHARK\frame_tvbuff.h" />
+    <ClInclude Include="WIRESHARK\glib\galloca.h" />
+    <ClInclude Include="WIRESHARK\glib\garray.h" />
+    <ClInclude Include="WIRESHARK\glib\gatomic.h" />
+    <ClInclude Include="WIRESHARK\glib\gbacktrace.h" />
+    <ClInclude Include="WIRESHARK\glib\gbytes.h" />
+    <ClInclude Include="WIRESHARK\glib\gcharset.h" />
+    <ClInclude Include="WIRESHARK\glib\gcharsetprivate.h" />
+    <ClInclude Include="WIRESHARK\glib\gconstructor.h" />
+    <ClInclude Include="WIRESHARK\glib\gconvert.h" />
+    <ClInclude Include="WIRESHARK\glib\genviron.h" />
+    <ClInclude Include="WIRESHARK\glib\gerror.h" />
+    <ClInclude Include="WIRESHARK\glib\gfileutils.h" />
+    <ClInclude Include="WIRESHARK\glib\ggettext.h" />
+    <ClInclude Include="WIRESHARK\glib\ghash.h" />
+    <ClInclude Include="WIRESHARK\glib\ghook.h" />
+    <ClInclude Include="WIRESHARK\glib\giochannel.h" />
+    <ClInclude Include="WIRESHARK\glib\glib-init.h" />
+    <ClInclude Include="WIRESHARK\glib\glib-private.h" />
+    <ClInclude Include="WIRESHARK\glib\glib.h" />
+    <ClInclude Include="WIRESHARK\glib\glibconfig.h" />
+    <ClInclude Include="WIRESHARK\glib\glibintl.h" />
+    <ClInclude Include="WIRESHARK\glib\glib_trace.h" />
+    <ClInclude Include="WIRESHARK\glib\glist.h" />
+    <ClInclude Include="WIRESHARK\glib\gmacros.h" />
+    <ClInclude Include="WIRESHARK\glib\gmain-internal.h" />
+    <ClInclude Include="WIRESHARK\glib\gmain.h" />
+    <ClInclude Include="WIRESHARK\glib\gmem.h" />
+    <ClInclude Include="WIRESHARK\glib\gmessages.h" />
+    <ClInclude Include="WIRESHARK\glib\gmirroringtable.h" />
+    <ClInclude Include="WIRESHARK\glib\gmodule.h" />
+    <ClInclude Include="WIRESHARK\glib\gnode.h" />
+    <ClInclude Include="WIRESHARK\glib\gpattern.h" />
+    <ClInclude Include="WIRESHARK\glib\gpoll.h" />
+    <ClInclude Include="WIRESHARK\glib\gprintf.h" />
+    <ClInclude Include="WIRESHARK\glib\gprintfint.h" />
+    <ClInclude Include="WIRESHARK\glib\gqsort.h" />
+    <ClInclude Include="WIRESHARK\glib\gquark.h" />
+    <ClInclude Include="WIRESHARK\glib\gqueue.h" />
+    <ClInclude Include="WIRESHARK\glib\grand.h" />
+    <ClInclude Include="WIRESHARK\glib\gscripttable.h" />
+    <ClInclude Include="WIRESHARK\glib\gslice.h" />
+    <ClInclude Include="WIRESHARK\glib\gslist.h" />
+    <ClInclude Include="WIRESHARK\glib\gstdio.h" />
+    <ClInclude Include="WIRESHARK\glib\gstrfuncs.h" />
+    <ClInclude Include="WIRESHARK\glib\gstring.h" />
+    <ClInclude Include="WIRESHARK\glib\gtestutils.h" />
+    <ClInclude Include="WIRESHARK\glib\gthread.h" />
+    <ClInclude Include="WIRESHARK\glib\gthreadprivate.h" />
+    <ClInclude Include="WIRESHARK\glib\gtimer.h" />
+    <ClInclude Include="WIRESHARK\glib\gtranslit-data.h" />
+    <ClInclude Include="WIRESHARK\glib\gtrashstack.h" />
+    <ClInclude Include="WIRESHARK\glib\gtree.h" />
+    <ClInclude Include="WIRESHARK\glib\gtypes.h" />
+    <ClInclude Include="WIRESHARK\glib\gunichartables.h" />
+    <ClInclude Include="WIRESHARK\glib\gunicode.h" />
+    <ClInclude Include="WIRESHARK\glib\gunicodeprivate.h" />
+    <ClInclude Include="WIRESHARK\glib\gunicomp.h" />
+    <ClInclude Include="WIRESHARK\glib\gunidecomp.h" />
+    <ClInclude Include="WIRESHARK\glib\gutils.h" />
+    <ClInclude Include="WIRESHARK\glib\gversionmacros.h" />
+    <ClInclude Include="WIRESHARK\glib\gwakeup.h" />
+    <ClInclude Include="WIRESHARK\glib\gwin32.h" />
+    <ClInclude Include="WIRESHARK\glib\libcharset\libcharset.h" />
+    <ClInclude Include="WIRESHARK\glib\libcharset\localcharset.h" />
+    <ClInclude Include="WIRESHARK\glib\valgrind.h" />
+    <ClInclude Include="WIRESHARK\globals.h" />
+    <ClInclude Include="WIRESHARK\log.h" />
+    <ClInclude Include="WIRESHARK\PCAP\pcapio.h" />
+    <ClInclude Include="WIRESHARK\register.h" />
+    <ClInclude Include="WIRESHARK\version.h" />
+    <ClInclude Include="WIRESHARK\wireshark.h" />
+    <ClInclude Include="WIRESHARK\wiretap\atm.h" />
+    <ClInclude Include="WIRESHARK\wiretap\erf.h" />
+    <ClInclude Include="WIRESHARK\wiretap\file_wrappers.h" />
+    <ClInclude Include="WIRESHARK\wiretap\merge.h" />
+    <ClInclude Include="WIRESHARK\wiretap\pcap-common.h" />
+    <ClInclude Include="WIRESHARK\wiretap\pcap-encap.h" />
+    <ClInclude Include="WIRESHARK\wiretap\wtap-int.h" />
+    <ClInclude Include="WIRESHARK\wiretap\wtap.h" />
+    <ClInclude Include="WIRESHARK\wsutil\aes.h" />
+    <ClInclude Include="WIRESHARK\wsutil\bits_count_ones.h" />
+    <ClInclude Include="WIRESHARK\wsutil\bits_ctz.h" />
+    <ClInclude Include="WIRESHARK\wsutil\buffer.h" />
+    <ClInclude Include="WIRESHARK\wsutil\copyright_info.h" />
+    <ClInclude Include="WIRESHARK\wsutil\crc16-plain.h" />
+    <ClInclude Include="WIRESHARK\wsutil\crc16.h" />
+    <ClInclude Include="WIRESHARK\wsutil\crc32.h" />
+    <ClInclude Include="WIRESHARK\wsutil\filesystem.h" />
+    <ClInclude Include="WIRESHARK\wsutil\file_util.h" />
+    <ClInclude Include="WIRESHARK\wsutil\inet_aton.h" />
+    <ClInclude Include="WIRESHARK\wsutil\inet_v6defs.h" />
+    <ClInclude Include="WIRESHARK\wsutil\md5.h" />
+    <ClInclude Include="WIRESHARK\wsutil\nstime.h" />
+    <ClInclude Include="WIRESHARK\wsutil\os_version_info.h" />
+    <ClInclude Include="WIRESHARK\wsutil\pint.h" />
+    <ClInclude Include="WIRESHARK\wsutil\plugins.h" />
+    <ClInclude Include="WIRESHARK\wsutil\privileges.h" />
+    <ClInclude Include="WIRESHARK\wsutil\rc4.h" />
+    <ClInclude Include="WIRESHARK\wsutil\report_err.h" />
+    <ClInclude Include="WIRESHARK\wsutil\sha1.h" />
+    <ClInclude Include="WIRESHARK\wsutil\sign_ext.h" />
+    <ClInclude Include="WIRESHARK\wsutil\strptime.h" />
+    <ClInclude Include="WIRESHARK\wsutil\str_util.h" />
+    <ClInclude Include="WIRESHARK\wsutil\tempfile.h" />
+    <ClInclude Include="WIRESHARK\wsutil\time_util.h" />
+    <ClInclude Include="WIRESHARK\wsutil\unicode-utils.h" />
+    <ClInclude Include="WIRESHARK\wsutil\ws_cpuid.h" />
+    <ClInclude Include="WIRESHARK\wsutil\ws_diag_control.h" />
+    <ClInclude Include="WIRESHARK\wsutil\ws_mempbrk.h" />
+    <ClInclude Include="WIRESHARK\wsutil\ws_mempbrk_int.h" />
+    <ClInclude Include="WIRESHARK\wsutil\ws_version_info.h" />
+    <ClInclude Include="WIRESHARK\ws_symbol_export.h" />
+    <ClInclude Include="WSEpan.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WSEpanMain.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="WIRESHARK\cfile.c" />
+    <ClCompile Include="WIRESHARK\color_filters.c" />
+    <ClCompile Include="WIRESHARK\epan\address_types.c" />
+    <ClCompile Include="WIRESHARK\epan\addr_and_mask.c" />
+    <ClCompile Include="WIRESHARK\epan\addr_resolv.c" />
+    <ClCompile Include="WIRESHARK\epan\aftypes.c" />
+    <ClCompile Include="WIRESHARK\epan\asm_utils.c" />
+    <ClCompile Include="WIRESHARK\epan\asn1.c" />
+    <ClCompile Include="WIRESHARK\epan\charsets.c" />
+    <ClCompile Include="WIRESHARK\epan\circuit.c" />
+    <ClCompile Include="WIRESHARK\epan\color_dissector_filters.c" />
+    <ClCompile Include="WIRESHARK\epan\column-utils.c" />
+    <ClCompile Include="WIRESHARK\epan\column.c" />
+    <ClCompile Include="WIRESHARK\epan\conversation.c" />
+    <ClCompile Include="WIRESHARK\epan\conversation_table.c" />
+    <ClCompile Include="WIRESHARK\epan\crc16-tvb.c" />
+    <ClCompile Include="WIRESHARK\epan\crc32-tvb.c" />
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap.c" />
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap_ccmp.c" />
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap_debug.c" />
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap_rijndael.c" />
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap_tkip.c" />
+    <ClCompile Include="WIRESHARK\epan\crypt\airpdcap_wep.c" />
+    <ClCompile Include="WIRESHARK\epan\decode_as.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\dfilter-macro.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\dfilter.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\dfunctions.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\dfvm.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\drange.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\gencode.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\semcheck.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-function.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-integer.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-pointer.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-range.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-string.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\sttype-test.c" />
+    <ClCompile Include="WIRESHARK\epan\dfilter\syntax-tree.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ax25.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ber.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-bpq.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-chdlc.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-data.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-e164.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-e212.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-eap.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-eth.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ethertype.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-fc.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-fclctl.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-frame.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-gre.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-airopeek.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-netmon.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-prism.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-radio.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-radiotap-iter.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-radiotap.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211-wlancap.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee80211.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee8021ah.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ieee8023.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ip.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ipv6.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ipx.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-isl.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-juniper.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-llc.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-mtp3.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-netbios.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-netrom.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-ppp.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-q708.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-sccp.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-sflow.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-sll.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-tcap.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-tr.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-vines.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-vlan.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-wccp.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-wifi-display.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-wifi-p2p.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\packet-wps.c" />
+    <ClCompile Include="WIRESHARK\epan\dissectors\register.c" />
+    <ClCompile Include="WIRESHARK\epan\epan.c" />
+    <ClCompile Include="WIRESHARK\epan\except.c" />
+    <ClCompile Include="WIRESHARK\epan\expert.c" />
+    <ClCompile Include="WIRESHARK\epan\filter_expressions.c" />
+    <ClCompile Include="WIRESHARK\epan\frame_data.c" />
+    <ClCompile Include="WIRESHARK\epan\frame_data_sequence.c" />
+    <ClCompile Include="WIRESHARK\epan\frequency-utils.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-bytes.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-double.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-guid.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-integer.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-ipv4.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-ipv6.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-none.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-pcre.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-string.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-time.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftype-tvbuff.c" />
+    <ClCompile Include="WIRESHARK\epan\ftypes\ftypes.c" />
+    <ClCompile Include="WIRESHARK\epan\guid-utils.c" />
+    <ClCompile Include="WIRESHARK\epan\in_cksum.c" />
+    <ClCompile Include="WIRESHARK\epan\ipproto.c" />
+    <ClCompile Include="WIRESHARK\epan\ipv4.c" />
+    <ClCompile Include="WIRESHARK\epan\oids.c" />
+    <ClCompile Include="WIRESHARK\epan\osi-utils.c" />
+    <ClCompile Include="WIRESHARK\epan\oui.c" />
+    <ClCompile Include="WIRESHARK\epan\packet-range.c" />
+    <ClCompile Include="WIRESHARK\epan\packet.c" />
+    <ClCompile Include="WIRESHARK\epan\prefs.c" />
+    <ClCompile Include="WIRESHARK\epan\print.c" />
+    <ClCompile Include="WIRESHARK\epan\print_stream.c" />
+    <ClCompile Include="WIRESHARK\epan\proto.c" />
+    <ClCompile Include="WIRESHARK\epan\range.c" />
+    <ClCompile Include="WIRESHARK\epan\reassemble.c" />
+    <ClCompile Include="WIRESHARK\epan\show_exception.c" />
+    <ClCompile Include="WIRESHARK\epan\sminmpec.c" />
+    <ClCompile Include="WIRESHARK\epan\stats_tree.c" />
+    <ClCompile Include="WIRESHARK\epan\stat_tap_ui.c" />
+    <ClCompile Include="WIRESHARK\epan\stream.c" />
+    <ClCompile Include="WIRESHARK\epan\strutil.c" />
+    <ClCompile Include="WIRESHARK\epan\tap.c" />
+    <ClCompile Include="WIRESHARK\epan\tfs.c" />
+    <ClCompile Include="WIRESHARK\epan\timestamp.c" />
+    <ClCompile Include="WIRESHARK\epan\to_str.c" />
+    <ClCompile Include="WIRESHARK\epan\tvbuff.c" />
+    <ClCompile Include="WIRESHARK\epan\tvbuff_real.c" />
+    <ClCompile Include="WIRESHARK\epan\tvbuff_subset.c" />
+    <ClCompile Include="WIRESHARK\epan\uat.c" />
+    <ClCompile Include="WIRESHARK\epan\uat_load.c" />
+    <ClCompile Include="WIRESHARK\epan\value_string.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_allocator_block.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_allocator_block_fast.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_allocator_simple.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_allocator_strict.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_array.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_core.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_list.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_map.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_miscutl.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_scopes.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_stack.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_strbuf.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_strutl.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_tree.c" />
+    <ClCompile Include="WIRESHARK\epan\wmem\wmem_user_cb.c" />
+    <ClCompile Include="WIRESHARK\epan\xdlc.c" />
+    <ClCompile Include="WIRESHARK\file.c" />
+    <ClCompile Include="WIRESHARK\fileset.c" />
+    <ClCompile Include="WIRESHARK\frame_tvbuff.c" />
+    <ClCompile Include="WIRESHARK\glib\garray.c" />
+    <ClCompile Include="WIRESHARK\glib\gatomic.c" />
+    <ClCompile Include="WIRESHARK\glib\gbacktrace.c" />
+    <ClCompile Include="WIRESHARK\glib\gbytes.c" />
+    <ClCompile Include="WIRESHARK\glib\gcharset.c" />
+    <ClCompile Include="WIRESHARK\glib\gconvert.c" />
+    <ClCompile Include="WIRESHARK\glib\genviron.c" />
+    <ClCompile Include="WIRESHARK\glib\gerror.c" />
+    <ClCompile Include="WIRESHARK\glib\gfileutils.c" />
+    <ClCompile Include="WIRESHARK\glib\ggettext.c" />
+    <ClCompile Include="WIRESHARK\glib\ghash.c" />
+    <ClCompile Include="WIRESHARK\glib\ghook.c" />
+    <ClCompile Include="WIRESHARK\glib\giochannel.c" />
+    <ClCompile Include="WIRESHARK\glib\glib-init.c" />
+    <ClCompile Include="WIRESHARK\glib\glib-private.c" />
+    <ClCompile Include="WIRESHARK\glib\glib.c" />
+    <ClCompile Include="WIRESHARK\glib\glist.c" />
+    <ClCompile Include="WIRESHARK\glib\gmain.c" />
+    <ClCompile Include="WIRESHARK\glib\gmem.c" />
+    <ClCompile Include="WIRESHARK\glib\gmessages.c" />
+    <ClCompile Include="WIRESHARK\glib\gnode.c" />
+    <ClCompile Include="WIRESHARK\glib\gpattern.c" />
+    <ClCompile Include="WIRESHARK\glib\gpoll.c" />
+    <ClCompile Include="WIRESHARK\glib\gprintf.c" />
+    <ClCompile Include="WIRESHARK\glib\gqsort.c" />
+    <ClCompile Include="WIRESHARK\glib\gquark.c" />
+    <ClCompile Include="WIRESHARK\glib\gqueue.c" />
+    <ClCompile Include="WIRESHARK\glib\grand.c" />
+    <ClCompile Include="WIRESHARK\glib\gslice.c" />
+    <ClCompile Include="WIRESHARK\glib\gslist.c" />
+    <ClCompile Include="WIRESHARK\glib\gstdio.c" />
+    <ClCompile Include="WIRESHARK\glib\gstrfuncs.c" />
+    <ClCompile Include="WIRESHARK\glib\gstring.c" />
+    <ClCompile Include="WIRESHARK\glib\gtestutils.c" />
+    <ClCompile Include="WIRESHARK\glib\gthread-win32.c" />
+    <ClCompile Include="WIRESHARK\glib\gthread.c" />
+    <ClCompile Include="WIRESHARK\glib\gtimer.c" />
+    <ClCompile Include="WIRESHARK\glib\gtranslit.c" />
+    <ClCompile Include="WIRESHARK\glib\gtrashstack.c" />
+    <ClCompile Include="WIRESHARK\glib\gtree.c" />
+    <ClCompile Include="WIRESHARK\glib\gunidecomp.c" />
+    <ClCompile Include="WIRESHARK\glib\guniprop.c" />
+    <ClCompile Include="WIRESHARK\glib\gutf8.c" />
+    <ClCompile Include="WIRESHARK\glib\gutils.c" />
+    <ClCompile Include="WIRESHARK\glib\gwakeup.c" />
+    <ClCompile Include="WIRESHARK\glib\gwin32.c" />
+    <ClCompile Include="WIRESHARK\glib\libcharset\localcharset.c" />
+    <ClCompile Include="WIRESHARK\PCAP\pcapio.cpp" />
+    <ClCompile Include="WIRESHARK\wiretap\atm.c" />
+    <ClCompile Include="WIRESHARK\wiretap\erf.c" />
+    <ClCompile Include="WIRESHARK\wiretap\file_wrappers.c" />
+    <ClCompile Include="WIRESHARK\wiretap\merge.c" />
+    <ClCompile Include="WIRESHARK\wiretap\pcap-common.c" />
+    <ClCompile Include="WIRESHARK\wiretap\wtap.c" />
+    <ClCompile Include="WIRESHARK\wsutil\aes.c" />
+    <ClCompile Include="WIRESHARK\wsutil\buffer.c" />
+    <ClCompile Include="WIRESHARK\wsutil\copyright_info.c" />
+    <ClCompile Include="WIRESHARK\wsutil\crc16-plain.c" />
+    <ClCompile Include="WIRESHARK\wsutil\crc16.c" />
+    <ClCompile Include="WIRESHARK\wsutil\crc32.c" />
+    <ClCompile Include="WIRESHARK\wsutil\filesystem.c" />
+    <ClCompile Include="WIRESHARK\wsutil\file_util.c" />
+    <ClCompile Include="WIRESHARK\wsutil\inet_aton.c" />
+    <ClCompile Include="WIRESHARK\wsutil\inet_ntop.c" />
+    <ClCompile Include="WIRESHARK\wsutil\inet_pton.c" />
+    <ClCompile Include="WIRESHARK\wsutil\md5.c" />
+    <ClCompile Include="WIRESHARK\wsutil\nstime.c" />
+    <ClCompile Include="WIRESHARK\wsutil\os_version_info.c" />
+    <ClCompile Include="WIRESHARK\wsutil\plugins.c" />
+    <ClCompile Include="WIRESHARK\wsutil\privileges.c" />
+    <ClCompile Include="WIRESHARK\wsutil\rc4.c" />
+    <ClCompile Include="WIRESHARK\wsutil\report_err.c" />
+    <ClCompile Include="WIRESHARK\wsutil\sha1.c" />
+    <ClCompile Include="WIRESHARK\wsutil\strptime.c" />
+    <ClCompile Include="WIRESHARK\wsutil\str_util.c" />
+    <ClCompile Include="WIRESHARK\wsutil\tempfile.c" />
+    <ClCompile Include="WIRESHARK\wsutil\time_util.c" />
+    <ClCompile Include="WIRESHARK\wsutil\unicode-utils.c" />
+    <ClCompile Include="WIRESHARK\wsutil\ws_mempbrk.c" />
+    <ClCompile Include="WIRESHARK\wsutil\ws_mempbrk_sse42.c" />
+    <ClCompile Include="WIRESHARK\wsutil\ws_version_info.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exports.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
